@@ -32,9 +32,9 @@ jobs:
           password: ${{ github.TOKEN }}
       - uses: docker/build-push-action@v3.3.0
         with:
-          context: ./proxy/
-          file: ./proxy/Dockerfile
+          context: ./
+          file: ./Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
-             ghcr.io/minestudio-host/servers:proxy
+             ghcr.io/minestudio-host/util:transfer
