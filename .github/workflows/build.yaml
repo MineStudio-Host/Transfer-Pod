@@ -30,7 +30,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ github.TOKEN }}
-      - uses: docker/build-push-action@v3.3.0
+      - uses: docker/build-push-action@v3.3.1
         with:
           context: ./
           file: ./Dockerfile
